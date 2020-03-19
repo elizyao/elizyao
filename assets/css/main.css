@@ -3099,121 +3099,6 @@ input, select, textarea {
 		border-color: #eeeeee;
 	}
 
-/* Pagination */
-
-	.pagination {
-		display: -moz-inline-flex;
-		display: -webkit-inline-flex;
-		display: -ms-inline-flex;
-		display: inline-flex;
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		cursor: default;
-		list-style: none;
-		margin: 0 0 2rem 2px;
-		padding: 0;
-	}
-
-		.pagination a, .pagination span {
-			-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			border: solid 2px;
-			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 0.8rem;
-			font-weight: 900;
-			height: 3rem;
-			letter-spacing: 0.075em;
-			line-height: calc(3rem - 4px);
-			margin-left: -2px;
-			min-width: 3rem;
-			position: relative;
-			text-align: center;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
-
-		.pagination .next, .pagination .previous {
-			text-decoration: none;
-			padding: 0 1.75rem;
-		}
-
-			.pagination .next:before, .pagination .previous:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				display: inline-block;
-				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1;
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
-			}
-
-			.pagination .next:before, .pagination .previous:before {
-				display: inline-block;
-				color: inherit !important;
-				line-height: inherit;
-			}
-
-		.pagination .previous:before {
-			content: '\f104';
-			margin-right: 0.9375em;
-		}
-
-		.pagination .next:before {
-			content: '\f105';
-			float: right;
-			margin-left: 0.9375em;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.pagination a, .pagination span {
-				font-size: 0.9rem;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.pagination .page, .pagination .extra {
-				display: none;
-			}
-
-		}
-
-	.pagination a, .pagination span {
-		border-color: #eeeeee;
-	}
-
-	.pagination a {
-		color: #212931 !important;
-	}
-
-		.pagination a:hover {
-			color: #C59A94 !important;
-			border-color: #C59A94;
-			z-index: 1;
-		}
-
-			.pagination a:hover + a,
-			.pagination a:hover + span {
-				border-left-color: #C59A94;
-			}
-
-		.pagination a.active {
-			background-color: #eeeeee;
-		}
-
-	.pagination span {
-		color: #eeeeee;
-	}
 
 /* Wrapper */
 
@@ -3233,7 +3118,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
+			background-color: #ffffff;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.png");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
@@ -3244,8 +3129,8 @@ input, select, textarea {
 
 			#wrapper > .bg.fixed {
 				position: fixed;
-				width: 100vw;
-				height: 100vh;
+				width: 100%;
+				height: 100%;
 			}
 
 		#wrapper.fade-in:before {
@@ -3276,7 +3161,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto, auto, auto 175%;
 			}
 
 		}
@@ -3289,7 +3174,7 @@ input, select, textarea {
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
-		align-items: center;
+		align-items: flex-end;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3310,7 +3195,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		min-height: 100%;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3615,7 +3500,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.85);
+		background: rgba(255, 255, 255, 0.9);
 		height: 4rem;
 		line-height: 4rem;
 		margin: auto auto 0 auto;
