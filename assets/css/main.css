@@ -4282,10 +4282,10 @@ input, select, textarea {
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		margin: auto auto 10px auto;
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
