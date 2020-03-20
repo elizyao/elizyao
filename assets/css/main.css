@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	min-height: 100%;
+	padding: 0;
 }
 
 ol, ul {
@@ -99,7 +101,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3108,6 +3110,7 @@ input, select, textarea {
 		-ms-transition: opacity 0.5s ease;
 		transition: opacity 0.5s ease;
 		position: relative;
+		height: 100%;
 		z-index: 1;
 		overflow: hidden;
 	}
@@ -4272,7 +4275,7 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		bottom: 0;
+		bottom: 0; 
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -4285,7 +4288,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
-		margin: auto auto 10px auto;
+		margin: auto auto auto auto;
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
