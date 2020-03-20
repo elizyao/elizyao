@@ -4272,6 +4272,7 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
+		bottom: 0;
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
