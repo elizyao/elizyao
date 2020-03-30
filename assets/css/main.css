@@ -25,6 +25,10 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+html, body {
+	height: 100%;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -99,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #cec9ca;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2238,8 +2242,45 @@ input, select, textarea {
 
 /* Form */
 
+.formContainer {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.formHolder {
+	width: 50%;
+	flex-grow: 1;
+	padding: 2rem 2rem 0 2rem;
+	
+}
+
+.formHolder > p {
+		font-family: Helvetica, sans-serif;
+		font-size: 0.6rem;
+		font-style: italic;
+		padding-top: 1rem;
+}
+
+.imageHolder {
+	max-width: 40%; 
+	vertical-align: middle;
+/*	display: flex;
+	align-items: center;*/
+	padding-top: 4rem;
+	margin: 0;
+	flex-grow: 1;
+}
+
+.imageHolder > img {
+	width: 100%;
+	height: auto;
+}
+
 	form {
-		margin: 0 0 2rem 0;
+		margin: 0 0 0rem 0;
 	}
 
 		form > :last-child {
@@ -2338,7 +2379,8 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: transparent;
+/*		background: transparent;*/
+		background-color: rgba(220, 220, 220, 0.75);
 		border-radius: 0;
 		border: solid 2px;
 		color: #1E252D;
@@ -2598,7 +2640,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
@@ -2619,7 +2661,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 1rem 0;
 			width: 100%;
 		}
 
@@ -3223,7 +3265,8 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
+/*		overflow: hidden;*/
+		height: 100%; 
 	}
 
 		#wrapper > .bg {
@@ -3232,14 +3275,30 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.png");
+			background-color: #cec9ca;
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
+
+/* different backgrounds for each page */
+			#wrapper.home > .bg {
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.png");
+			}
+
+			#wrapper.about > .bg {
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/2015recitalbg.jpg");
+				}
+
+			#wrapper.watch > .bg {
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/lecturerecitalBG.JPG");
+				}
+
+			#wrapper.contact > .bg {
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/carlinmabg.jpg");
+				}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
@@ -3253,11 +3312,11 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease-in-out;
 			-ms-transition: opacity 1s ease-in-out;
 			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background: #1e252d;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
+			background: #cec9ca; /* this is the background color you see before the background image loads */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3284,10 +3343,10 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
+		padding: 8rem 4rem 6rem 4rem;
+		-moz-align-items: flex-end;
+		-webkit-align-items: flex-end;
+		-ms-align-items: flex-end;
 		align-items: flex-end; /* this makes text go to the right */
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3309,7 +3368,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 78vh;
+		min-height: 70vh;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3614,7 +3673,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(255, 255, 255, 0.75);
 		height: 4rem;
 		line-height: 4rem;
 		margin: auto auto 0 auto;
@@ -3760,9 +3819,9 @@ input, select, textarea {
 	#main {
     	background: rgba(255,255,255,0.9);
 		position: relative;
-		margin: 0 auto;
+		margin: 1rem auto;
 		width: calc(100% - 4rem);
-		max-width: 64rem;
+		max-width: 48rem;
 		z-index: 2;
 		padding: 0;
 	}
@@ -3947,6 +4006,27 @@ input, select, textarea {
 			}
 
 		}
+
+/* scalable video code */
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/* .watch p {
+	margin-top: -25px;
+}*/
 
 /* Footer */
 
@@ -4388,7 +4468,7 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		bottom: -50px;
+		text-align: center;
 		align-self: flex-end;
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
@@ -4397,13 +4477,21 @@ input, select, textarea {
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		line-height: 1.5;
-		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		margin: 0px;
+		width: 100%;
+		padding: 15px;
+/*		max-width: 72rem;*/
 		z-index: 2;
 	}
+
+/* This is necessary for the copyright notice on the index page to be at the bottom without messing up the positioning on other pages */
+#indexfooter {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+}
 
 		#copyright input, #copyright select, #copyright textarea {
 			color: #ffffff;
@@ -4468,7 +4556,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#copyright {
-				margin: 4rem auto;
+				margin: /*4rem*/ auto;
 			}
 
 		}
