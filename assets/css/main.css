@@ -2249,15 +2249,8 @@ input, select, textarea {
 
 }
 
-@media screen and (max-width: 700px) {
-    .formContainer {
-        display: flex;
-		flex-direction: column;
-    }
-}
-
 .formHolder {
-/*	width: 50%;*/
+	width: 60%;
 	flex-grow: 1;
 	padding: 2rem 2rem 0 2rem;
 	
@@ -2271,7 +2264,7 @@ input, select, textarea {
 }
 
 .imageHolder {
-/*	max-width: 40%; */
+	max-width: 40%;
 	vertical-align: middle;
 	padding-top: 4rem;
 	margin: 0;
@@ -2281,6 +2274,25 @@ input, select, textarea {
 .imageHolder > img {
 	width: 100%;
 	height: auto;
+}
+
+/* To make the image div wrap underneath */
+@media screen and (max-width: 700px) {
+    .formContainer {
+        display: flex;
+		flex-direction: column;
+    }
+	
+	.formHolder {
+		width: 100%;
+	}
+	
+	.imageHolder {
+		padding-top: 0rem;
+		margin: 0;
+		max-width: 80%;
+		align-self: center;
+	}
 }
 
 	form {
