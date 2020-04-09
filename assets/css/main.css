@@ -3319,6 +3319,10 @@ input, select, textarea {
 				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/YPrecital.JPG");
 				}
 
+			#wrapper.collaborate > .bg {
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/piano-geertpietersbg.jpg");
+				}
+
 			#wrapper.contact > .bg {
 				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/carlinmabg.jpg");
 				}
