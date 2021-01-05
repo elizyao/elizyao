@@ -3304,7 +3304,7 @@ input, select, textarea {
 
 /* different backgrounds for each page */
 			#wrapper.home > .bg {
-				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.png");
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/watchBG8.jpg");
 			}
 
 			#wrapper.about > .bg {
@@ -3386,7 +3386,7 @@ input, select, textarea {
 		-moz-justify-content: -moz-flex-end;
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
-		justify-content: flex-start; /*This makes the intro text move to the top */
+		justify-content: flex-end; /* This makes the intro text move to the bottom */
 		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
