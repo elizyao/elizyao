@@ -3308,7 +3308,7 @@ input, select, textarea {
 			}
 
 			#wrapper.about > .bg {
-				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/2015recitalbg.jpg");
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/piano-geertpietersbg.jpg");
 				}
 
 			#wrapper.watch > .bg {
@@ -3320,7 +3320,7 @@ input, select, textarea {
 				}
 
 			#wrapper.collaborate > .bg {
-				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/piano-geertpietersbg.jpg");
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/2015recitalbg.jpg");
 				}
 
 			#wrapper.contact > .bg {
