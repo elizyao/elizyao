@@ -3370,7 +3370,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem;
+		padding: 8rem 4rem 0rem 4rem;
 		-moz-align-items: flex-end;
 		-webkit-align-items: flex-end;
 		-ms-align-items: flex-end;
