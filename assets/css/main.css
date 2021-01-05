@@ -3304,7 +3304,7 @@ input, select, textarea {
 
 /* different backgrounds for each page */
 			#wrapper.home > .bg {
-				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/watchBG8.jpg");
+				background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/homeBG.jpg");
 			}
 
 			#wrapper.about > .bg {
